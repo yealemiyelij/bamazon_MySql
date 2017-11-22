@@ -1,0 +1,29 @@
+{
+  "name": "bamazon_mysql",
+  "version": "1.0.0",
+  "description": "combination of node.js and mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yealemiyelij/bamazon_MySql.git"
+  },
+  "keywords": [
+    "yealemiyelij"
+  ],
+  "author": "Wondu Yimer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yealemiyelij/bamazon_MySql/issues"
+  },
+  "homepage": "https://github.com/yealemiyelij/bamazon_MySql#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "inquirer": "^4.0.0",
+    "mysql": "^2.15.0",
+    "prompt": "^1.0.0"
+  }
+}
