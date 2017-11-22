@@ -22,7 +22,7 @@ connection.connect(function (err) {
 
 		//creates a table for the information from the mysql database table;
 		var table = new Table({
-			head: [colors.magenta('Item_Id'), colors.magenta('Product_Name'), colors.magenta('Price')],
+			head: [colors.magenta.bold('Item_Id'), colors.magenta.bold('Product_Name'), colors.magenta.bold('Price')],
 			style: {
 				//: 'green', //['rgba(255, 0, 255, 0)'],
 				compact: false,
@@ -123,11 +123,11 @@ connection.connect(function (err) {
 						if (error) throw error;
 						// console.log('Problem ', error);
 						console.log('');
-						console.log(colors.magenta('If you have any question about the product, please contact us: PHONE (_ _ _) (_ _ _) (_ _ _ _)'));
+						console.log(colors.magenta.bold('If you have any question about the product, please contact us: PHONE (_ _ _) (_ _ _) (_ _ _ _)'));
 						console.log('');
-						console.log(colors.magenta('Your order has been processed.  Thank you for your bussiness!'));
+						console.log(colors.magenta.bold('Your order has been processed.  Thank you for your bussiness!'));
 						console.log('');
-						console.log(colors.magenta('!...bamazon online shoping...!'));
+						console.log(colors.magenta.underline.bold('!...bamazon online shoping...!'));
 						console.log('');
 
 						connection.end();
