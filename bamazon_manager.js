@@ -28,7 +28,7 @@ var manager_options = {
 //start the prompt
 prompt.start();
 
-//this prompts the above question and below it states what will be done based on what number the user types
+//the prompt above and below states what will be done based on what number the user types
 prompt.get(manager_options, function (err, res) {
     if (res.mOptions == 1) {
         view_products();
@@ -46,7 +46,7 @@ prompt.get(manager_options, function (err, res) {
 
 //function for option 1 to view products
 var view_products = function () {
-    //connects to the mysql database and returning infromation
+    //connects to mysql database and returning infromation
     connection.query('SELECT * FROM Products', function (err, res) {
         console.log('');
         console.log('Products for Sale')
