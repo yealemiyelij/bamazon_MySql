@@ -139,7 +139,7 @@ CREATE TABLE Departments
     VALUES
         (
             'Food',
-            3500,
+            1500,
             0);
 
     INSERT INTO Departments
@@ -147,7 +147,7 @@ CREATE TABLE Departments
     VALUES
         (
             'Mens Clothing',
-            14000,
+            3700,
             0);
 
     INSERT INTO Departments
@@ -155,7 +155,7 @@ CREATE TABLE Departments
     VALUES
         (
             'Entertainment',
-            7400,
+            5400,
             0);
 
     INSERT INTO Departments
@@ -163,7 +163,7 @@ CREATE TABLE Departments
     VALUES
         (
             'Womens Clothing',
-            10000,
+            6500,
             0);
 
     INSERT INTO Departments
@@ -171,7 +171,7 @@ CREATE TABLE Departments
     VALUES
         (
             'Music',
-            20000,
+            13200,
             0);
 
     INSERT INTO Departments
@@ -179,12 +179,15 @@ CREATE TABLE Departments
     VALUES
         (
             'Software',
-            18000,
+            1000,
             0);
 
 
-    -- This creates the alias table TotalProfits that will exist only when requested by the executive 
-    -- SHOW TABLES;
-   -- CREATE VIEW bamazon_db Total_Profit AS
-       -- SELECT DepartmentId, DepartmentName, OverHeadCosts, TotalSales, TotalSales-OverHeadCosts AS TotalProfit
-       -- FROM Departments;
+
+    -- //Creating an alias table for Total_Profits (used for supervisors) 
+
+    SHOW TABLES;
+    CREATE VIEW bamazon_db.Total_Profit
+    AS
+        SELECT Department_Id, Department_Name, OverHead_Cost, Total_Sales, Total_Sales-OverHead_Cost AS Total_Profit
+        FROM Departments;
